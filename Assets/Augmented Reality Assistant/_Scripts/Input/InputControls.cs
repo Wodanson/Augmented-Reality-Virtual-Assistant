@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/ExampleAssets/_Scripts/Input/InputControls.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/Augmented Reality Assistant/_Scripts/Input/InputControls.inputactions'
 
 using System;
 using System.Collections;
