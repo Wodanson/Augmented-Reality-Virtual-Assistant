@@ -1,0 +1,179 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8982217746010788571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc16b42e9c8e2ee4099da70998adf723, type: 3}
+  m_Name: AvatarSpeakNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: a29b6b6a056d56a41a5fb4d429938647
+  position: {x: 147.39998, y: 458.80002}
+  description: 
+  avatarName: avatar Falco
+  audioClip: {fileID: 8300000, guid: 490a23f20eaa1ea49ac1bb0050deae60, type: 3}
+  waitToFinish: 1
+--- !u!114 &-2907059694684061214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f9529a378e0ba43a825bc288a07041, type: 3}
+  m_Name: GroupNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 2e7cffd1e9f172d49b549b6546275f14
+  position: {x: 268.91415, y: 280.16702}
+  description: 
+  children:
+  - {fileID: -8982217746010788571}
+  - {fileID: 9112749904146880901}
+  - {fileID: 4968785649591443337}
+--- !u!114 &-2554854236095697138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c3c1bbf04445824a80bbc0462982710, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: b28fb72185878394489cb67ebcbd8c5b
+  position: {x: 293.9956, y: -66.487854}
+  description: 
+  child: {fileID: 3699805419848868757}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c0d71b8b03365b43a6c9662366c6bde, type: 3}
+  m_Name: Avatar Falco startup tree
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: -2554854236095697138}
+  treeState: 0
+  nodes:
+  - {fileID: -2554854236095697138}
+  - {fileID: -8982217746010788571}
+  - {fileID: -2907059694684061214}
+  - {fileID: 9112749904146880901}
+  - {fileID: 4968785649591443337}
+  - {fileID: 7814447809029223196}
+  - {fileID: 14766226995485899}
+  - {fileID: 3699805419848868757}
+--- !u!114 &14766226995485899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934ad2df8a321d641b666fa3af3af234, type: 3}
+  m_Name: PlaySequenceTree
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: f894fb908d63fa04b858a7cdc1bd1b26
+  position: {x: 0.29503694, y: 195.32002}
+  description: 
+  treeToPlay: {fileID: 11400000}
+--- !u!114 &3699805419848868757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fd9743c52abed45a4d5175e017f3a2, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 3fc2f21f0adaa9748a6affeab4b83ef4
+  position: {x: 213.60004, y: 66.06601}
+  description: 
+  children:
+  - {fileID: 14766226995485899}
+  - {fileID: -2907059694684061214}
+  - {fileID: 7814447809029223196}
+--- !u!114 &4968785649591443337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d380a6579e1f86b4cb8f4348cdcaf890, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 93ade6b2fc1945c498f82443ec3dd7d7
+  position: {x: 541.6, y: 449.6}
+  description: 
+  duration: 1
+--- !u!114 &7814447809029223196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96aa8363e1fef04479f1f2e8b2ca367c, type: 3}
+  m_Name: AvatarCreateNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: cc053a904dfb2df459e0837270a06563
+  position: {x: 366.9965, y: 178.06598}
+  description: 
+  avatarSettings: {fileID: 0}
+--- !u!114 &9112749904146880901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38ffdef99d33c08499d81d576f44a6fd, type: 3}
+  m_Name: AvatarLookAtUserNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: a78d70fd8112f064f845a5b61556753f
+  position: {x: 326.6, y: 454.68805}
+  description: 
+  avatarName: avatar Falco
+  lookAtAvatarName: 
+  offset: {x: 0, y: 0, z: 0}
