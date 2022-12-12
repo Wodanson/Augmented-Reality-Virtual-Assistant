@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8982217746010788571
+--- !u!114 &-3774658986582915621
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14,33 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   started: 0
-  guid: a29b6b6a056d56a41a5fb4d429938647
-  position: {x: 147.39998, y: 458.80002}
+  guid: a8d6e38b8915e29458e383af43519434
+  position: {x: 894.7, y: 674.0196}
   description: 
-  avatarName: avatar Falco
-  audioClip: {fileID: 8300000, guid: 490a23f20eaa1ea49ac1bb0050deae60, type: 3}
+  avatarName: Falco Gillissen Settings
+  audioClip: {fileID: 8300000, guid: f7b8e6bad7002dd42950c264d0de8dbb, type: 3}
   waitToFinish: 1
---- !u!114 &-2907059694684061214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33f9529a378e0ba43a825bc288a07041, type: 3}
-  m_Name: GroupNode
-  m_EditorClassIdentifier: 
-  state: 0
-  started: 0
-  guid: 2e7cffd1e9f172d49b549b6546275f14
-  position: {x: 268.91415, y: 280.16702}
-  description: 
-  children:
-  - {fileID: -8982217746010788571}
-  - {fileID: 9112749904146880901}
-  - {fileID: 4968785649591443337}
 --- !u!114 &-2554854236095697138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,11 +33,49 @@ MonoBehaviour:
   m_Name: RootNode
   m_EditorClassIdentifier: 
   state: 0
-  started: 0
+  started: 1
   guid: b28fb72185878394489cb67ebcbd8c5b
-  position: {x: 293.9956, y: -66.487854}
+  position: {x: 510.4, y: 30.967995}
   description: 
-  child: {fileID: 3699805419848868757}
+  child: {fileID: -2191728647572999311}
+--- !u!114 &-2191728647572999311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b15aa3af2331834db148fce29ae7c70, type: 3}
+  m_Name: RepeatNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: e4c28308972818342aeba45a9d65717c
+  position: {x: 510.80002, y: 158.79999}
+  description: 
+  child: {fileID: 6841643675811323707}
+  repeatState: 0
+--- !u!114 &-1365687032309369196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 072ece06a65ce10469d602f86bc77430, type: 3}
+  m_Name: AvatarLookAtCameraNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 3d9e82eba0df86a4d83eaf844dfe9bb8
+  position: {x: 634.80005, y: 680.67126}
+  description: 
+  avatarName: Falco Gillissen Settings
+  offset: {x: 0, y: 0, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75,71 +92,15 @@ MonoBehaviour:
   treeState: 0
   nodes:
   - {fileID: -2554854236095697138}
-  - {fileID: -8982217746010788571}
-  - {fileID: -2907059694684061214}
-  - {fileID: 9112749904146880901}
-  - {fileID: 4968785649591443337}
-  - {fileID: 7814447809029223196}
-  - {fileID: 14766226995485899}
-  - {fileID: 3699805419848868757}
---- !u!114 &14766226995485899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 934ad2df8a321d641b666fa3af3af234, type: 3}
-  m_Name: PlaySequenceTree
-  m_EditorClassIdentifier: 
-  state: 0
-  started: 0
-  guid: f894fb908d63fa04b858a7cdc1bd1b26
-  position: {x: 0.29503694, y: 195.32002}
-  description: 
-  treeToPlay: {fileID: 11400000}
---- !u!114 &3699805419848868757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2fd9743c52abed45a4d5175e017f3a2, type: 3}
-  m_Name: SequencerNode
-  m_EditorClassIdentifier: 
-  state: 0
-  started: 0
-  guid: 3fc2f21f0adaa9748a6affeab4b83ef4
-  position: {x: 213.60004, y: 66.06601}
-  description: 
-  children:
-  - {fileID: 14766226995485899}
-  - {fileID: -2907059694684061214}
-  - {fileID: 7814447809029223196}
---- !u!114 &4968785649591443337
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d380a6579e1f86b4cb8f4348cdcaf890, type: 3}
-  m_Name: WaitNode
-  m_EditorClassIdentifier: 
-  state: 0
-  started: 0
-  guid: 93ade6b2fc1945c498f82443ec3dd7d7
-  position: {x: 541.6, y: 449.6}
-  description: 
-  duration: 1
---- !u!114 &7814447809029223196
+  - {fileID: -2191728647572999311}
+  - {fileID: 6841643675811323707}
+  - {fileID: 7794608597008649367}
+  - {fileID: 3585760931540817084}
+  - {fileID: 3484911486451536914}
+  - {fileID: 5608997662829487179}
+  - {fileID: -1365687032309369196}
+  - {fileID: -3774658986582915621}
+--- !u!114 &3484911486451536914
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -153,11 +114,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   started: 0
-  guid: cc053a904dfb2df459e0837270a06563
-  position: {x: 366.9965, y: 178.06598}
+  guid: b8e8db77da528594c98e08773028bf53
+  position: {x: 317.4, y: 592}
   description: 
-  avatarSettings: {fileID: 0}
---- !u!114 &9112749904146880901
+  avatarSettings: {fileID: 11400000, guid: 13df902fffe10f344b458d3ee43d0708, type: 2}
+--- !u!114 &3585760931540817084
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -166,14 +127,74 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38ffdef99d33c08499d81d576f44a6fd, type: 3}
-  m_Name: AvatarLookAtUserNode
+  m_Script: {fileID: 11500000, guid: f2ee70ae65b3cf046ab0e66aa820d7d5, type: 3}
+  m_Name: InProgramStateNode
   m_EditorClassIdentifier: 
   state: 0
   started: 0
-  guid: a78d70fd8112f064f845a5b61556753f
-  position: {x: 326.6, y: 454.68805}
+  guid: 79a2065829e36c640bb76d38bd76dd29
+  position: {x: 345.4, y: 427.80002}
   description: 
-  avatarName: avatar Falco
-  lookAtAvatarName: 
-  offset: {x: 0, y: 0, z: 0}
+  child: {fileID: 3484911486451536914}
+  stateToCheck: 0
+  boolean: 0
+  positive: 0
+--- !u!114 &5608997662829487179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fd9743c52abed45a4d5175e017f3a2, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 6db14b259331110458b9ec9481b1bb51
+  position: {x: 739.19995, y: 561.8}
+  description: 
+  children: []
+--- !u!114 &6841643675811323707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f9529a378e0ba43a825bc288a07041, type: 3}
+  m_Name: GroupNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 32f4ca262965ea34b8cc90d954d71036
+  position: {x: 510.4, y: 293.4}
+  description: 
+  children:
+  - {fileID: 3585760931540817084}
+  - {fileID: 7794608597008649367}
+--- !u!114 &7794608597008649367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ee70ae65b3cf046ab0e66aa820d7d5, type: 3}
+  m_Name: InProgramStateNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: dabc730ab64a4054db163768cc5f2ae8
+  position: {x: 715.4, y: 424.80002}
+  description: 
+  child: {fileID: 0}
+  stateToCheck: 0
+  boolean: 0
+  positive: 0

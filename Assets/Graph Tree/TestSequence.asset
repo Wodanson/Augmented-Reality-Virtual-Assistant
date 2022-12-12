@@ -187,7 +187,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 4204aba146c46404e89d3557db24ab2f
-  position: {x: -1275.5, y: 28.999973}
+  position: {x: -1274.6735, y: 3.894247}
   description: 
   child: {fileID: -5529745166546047991}
   stateToCheck: 0
@@ -226,7 +226,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: b4801412311f4084c960f4351541484f
-  position: {x: 11, y: -188}
+  position: {x: 8.879119, y: -186.50343}
   description: 
   child: {fileID: 5825025818863283960}
   repeatState: 0
@@ -1013,12 +1013,12 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 272f98a27c414b940a389c086b16c560
-  position: {x: 11, y: -97}
+  position: {x: 9.371099, y: -87.61348}
   description: 
   children:
-  - {fileID: -5965818884416547175}
   - {fileID: -7605569033697869854}
   - {fileID: 965056414205120814}
+  - {fileID: -5965818884416547175}
 --- !u!114 &6042759918355524371
 MonoBehaviour:
   m_ObjectHideFlags: 0

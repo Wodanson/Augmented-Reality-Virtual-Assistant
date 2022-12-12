@@ -6,19 +6,21 @@ using UnityEngine.SceneManagement;
 
 public class ScenesSystem : PersistentSingleton<ScenesSystem>
 {
-    Scene AR_Assistant_Scene;
+    // Scene AR_Assistant_Scene;
+    private string AR_Assistant_Scene = "AR Assistant Scene";
+    public string AR_Additive_Scene;
     private async void Start()
     {
-        loadSceneByName("AR Assistant Scene",LoadSceneMode.Additive);
-        loadSceneByName("Masterclass", LoadSceneMode.Additive);
+        loadSceneByName(AR_Assistant_Scene, LoadSceneMode.Additive);
+        loadSceneByName(AR_Additive_Scene, LoadSceneMode.Additive);
         //loadSceneByName("Masterclass",LoadSceneMode.Additive);
         await Task.Delay(25);
         //oadSceneByName("User Interface", LoadSceneMode.Additive);
     }
 
-    public void loadFola2Scene()
+    public void loadAdditiveScene()
     {
-        loadSceneByName("Masterclass", LoadSceneMode.Additive);
+        loadSceneByName(AR_Additive_Scene, LoadSceneMode.Additive);
     }
 
     /// <summary>
@@ -26,7 +28,7 @@ public class ScenesSystem : PersistentSingleton<ScenesSystem>
     /// </summary>
     /// <param name="SceneName"></param>
     /// <param name="loadSceneMode"></param>
-    public void loadSceneByName(string SceneName,LoadSceneMode loadSceneMode)
+    public void loadSceneByName(string SceneName, LoadSceneMode loadSceneMode)
     {
         if (SceneManager.GetSceneByName(SceneName).isLoaded == false) SceneManager.LoadScene(SceneName, loadSceneMode);
     }
