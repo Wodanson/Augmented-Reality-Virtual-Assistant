@@ -15,7 +15,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: c7281d4a5a026714287f3c0b97cc68b2
-  position: {x: 158, y: 477}
+  position: {x: 158.6, y: 476.80002}
   description: 
   child: {fileID: -4605843932321766411}
   stateToCheck: 0
@@ -58,7 +58,7 @@ MonoBehaviour:
   guid: 071af03c51f278346beae7e120ead811
   position: {x: 418.66663, y: 746.6666}
   description: 
-  avatarName: Chris
+  avatarName: Falco
   offset: {x: 0, y: 0, z: 0}
 --- !u!114 &-4605843932321766411
 MonoBehaviour:
@@ -77,7 +77,7 @@ MonoBehaviour:
   guid: 3114c8403a4dccd409dff85074559917
   position: {x: 158.00002, y: 600.0001}
   description: 
-  avatarSettings: {fileID: 11400000, guid: 71a099a113e04fb48bb19b0d7a0f4b42, type: 2}
+  avatarSettings: {fileID: 11400000, guid: 13df902fffe10f344b458d3ee43d0708, type: 2}
 --- !u!114 &-3551739494126987256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,7 +93,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: cc1ef5d21a10a5847afc5bdcc70a7658
-  position: {x: 391, y: 363.33334}
+  position: {x: 401.4, y: 365.2}
   description: 
   children:
   - {fileID: -6361708044133201217}
@@ -115,7 +115,7 @@ MonoBehaviour:
   guid: faa524f7bf506b1449a1e27f7f9ad99c
   position: {x: 666.75006, y: 746.66675}
   description: 
-  avatarName: Chris
+  avatarName: Falco
   audioClip: {fileID: 8300000, guid: d7cdcadb57e444145a10618d977ced8f, type: 3}
   waitToFinish: 1
 --- !u!114 &-506981129135484400
@@ -133,7 +133,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: c6562de528624ed48b0f257ea2c39a7b
-  position: {x: 403.33334, y: 96.66669}
+  position: {x: 392.19998, y: 95.99999}
   description: 
   child: {fileID: 4260094672933277267}
 --- !u!114 &11400000
@@ -175,7 +175,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: a113398ebedfbb941ba654733878a468
-  position: {x: 418, y: 244.33331}
+  position: {x: 399.6, y: 244}
   description: 
   child: {fileID: -3551739494126987256}
   repeatState: 0

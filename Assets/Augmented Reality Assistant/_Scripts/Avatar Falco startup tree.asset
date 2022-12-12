@@ -1,0 +1,202 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3774658986582915621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc16b42e9c8e2ee4099da70998adf723, type: 3}
+  m_Name: AvatarSpeakNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: a8d6e38b8915e29458e383af43519434
+  position: {x: 894.7, y: 674.0196}
+  description: 
+  avatarName: Falco Gillissen Settings
+  audioClip: {fileID: 8300000, guid: f7b8e6bad7002dd42950c264d0de8dbb, type: 3}
+  waitToFinish: 1
+--- !u!114 &-2554854236095697138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c3c1bbf04445824a80bbc0462982710, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 1
+  guid: b28fb72185878394489cb67ebcbd8c5b
+  position: {x: 510.4, y: 30.967995}
+  description: 
+  child: {fileID: -2191728647572999311}
+--- !u!114 &-2191728647572999311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b15aa3af2331834db148fce29ae7c70, type: 3}
+  m_Name: RepeatNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 1
+  guid: e4c28308972818342aeba45a9d65717c
+  position: {x: 510.80002, y: 158.79999}
+  description: 
+  child: {fileID: 6841643675811323707}
+  repeatState: 0
+--- !u!114 &-1365687032309369196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 072ece06a65ce10469d602f86bc77430, type: 3}
+  m_Name: AvatarLookAtCameraNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 3d9e82eba0df86a4d83eaf844dfe9bb8
+  position: {x: 634.80005, y: 680.67126}
+  description: 
+  avatarName: Falco Gillissen Settings
+  offset: {x: 0, y: 0, z: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c0d71b8b03365b43a6c9662366c6bde, type: 3}
+  m_Name: Avatar Falco startup tree
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: -2554854236095697138}
+  treeState: 0
+  nodes:
+  - {fileID: -2554854236095697138}
+  - {fileID: -2191728647572999311}
+  - {fileID: 6841643675811323707}
+  - {fileID: 7794608597008649367}
+  - {fileID: 3585760931540817084}
+  - {fileID: 3484911486451536914}
+  - {fileID: 5608997662829487179}
+  - {fileID: -1365687032309369196}
+  - {fileID: -3774658986582915621}
+--- !u!114 &3484911486451536914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96aa8363e1fef04479f1f2e8b2ca367c, type: 3}
+  m_Name: AvatarCreateNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 1
+  guid: b8e8db77da528594c98e08773028bf53
+  position: {x: 317.4, y: 592}
+  description: 
+  avatarSettings: {fileID: 11400000, guid: 13df902fffe10f344b458d3ee43d0708, type: 2}
+--- !u!114 &3585760931540817084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ee70ae65b3cf046ab0e66aa820d7d5, type: 3}
+  m_Name: InProgramStateNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 1
+  guid: 79a2065829e36c640bb76d38bd76dd29
+  position: {x: 345.4, y: 427.80002}
+  description: 
+  child: {fileID: 3484911486451536914}
+  stateToCheck: 0
+  boolean: 1
+  positive: 0
+--- !u!114 &5608997662829487179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fd9743c52abed45a4d5175e017f3a2, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 6db14b259331110458b9ec9481b1bb51
+  position: {x: 735.19995, y: 542.6}
+  description: 
+  children:
+  - {fileID: -1365687032309369196}
+  - {fileID: -3774658986582915621}
+--- !u!114 &6841643675811323707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f9529a378e0ba43a825bc288a07041, type: 3}
+  m_Name: GroupNode
+  m_EditorClassIdentifier: 
+  state: 2
+  started: 1
+  guid: 32f4ca262965ea34b8cc90d954d71036
+  position: {x: 510.4, y: 293.4}
+  description: 
+  children:
+  - {fileID: 3585760931540817084}
+  - {fileID: 7794608597008649367}
+--- !u!114 &7794608597008649367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ee70ae65b3cf046ab0e66aa820d7d5, type: 3}
+  m_Name: InProgramStateNode
+  m_EditorClassIdentifier: 
+  state: 2
+  started: 1
+  guid: dabc730ab64a4054db163768cc5f2ae8
+  position: {x: 720.19995, y: 422.80002}
+  description: 
+  child: {fileID: 5608997662829487179}
+  stateToCheck: 0
+  boolean: 1
+  positive: 0
