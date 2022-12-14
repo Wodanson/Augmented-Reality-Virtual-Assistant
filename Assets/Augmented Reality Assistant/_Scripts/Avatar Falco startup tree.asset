@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Name: RepeatNode
   m_EditorClassIdentifier: 
   state: 0
-  started: 0
+  started: 1
   guid: e4c28308972818342aeba45a9d65717c
   position: {x: 510.80002, y: 158.79999}
   description: 
@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Name: AvatarCreateNode
   m_EditorClassIdentifier: 
   state: 0
-  started: 0
+  started: 1
   guid: b8e8db77da528594c98e08773028bf53
   position: {x: 317.4, y: 592}
   description: 
@@ -131,13 +131,13 @@ MonoBehaviour:
   m_Name: InProgramStateNode
   m_EditorClassIdentifier: 
   state: 0
-  started: 0
+  started: 1
   guid: 79a2065829e36c640bb76d38bd76dd29
   position: {x: 345.4, y: 427.80002}
   description: 
   child: {fileID: 3484911486451536914}
   stateToCheck: 0
-  boolean: 0
+  boolean: 1
   positive: 0
 --- !u!114 &5608997662829487179
 MonoBehaviour:
@@ -154,9 +154,11 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 6db14b259331110458b9ec9481b1bb51
-  position: {x: 739.19995, y: 561.8}
+  position: {x: 735.19995, y: 542.6}
   description: 
-  children: []
+  children:
+  - {fileID: -1365687032309369196}
+  - {fileID: -3774658986582915621}
 --- !u!114 &6841643675811323707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,8 +171,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33f9529a378e0ba43a825bc288a07041, type: 3}
   m_Name: GroupNode
   m_EditorClassIdentifier: 
-  state: 0
-  started: 0
+  state: 2
+  started: 1
   guid: 32f4ca262965ea34b8cc90d954d71036
   position: {x: 510.4, y: 293.4}
   description: 
@@ -189,12 +191,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2ee70ae65b3cf046ab0e66aa820d7d5, type: 3}
   m_Name: InProgramStateNode
   m_EditorClassIdentifier: 
-  state: 0
-  started: 0
+  state: 2
+  started: 1
   guid: dabc730ab64a4054db163768cc5f2ae8
-  position: {x: 715.4, y: 424.80002}
+  position: {x: 720.19995, y: 422.80002}
   description: 
-  child: {fileID: 0}
+  child: {fileID: 5608997662829487179}
   stateToCheck: 0
-  boolean: 0
+  boolean: 1
   positive: 0
