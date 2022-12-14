@@ -93,7 +93,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: cc1ef5d21a10a5847afc5bdcc70a7658
-  position: {x: 401.4, y: 365.2}
+  position: {x: 399.20004, y: 352.63297}
   description: 
   children:
   - {fileID: -6361708044133201217}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9f239a32b6ad4a4696c7cc60d30ae7f, type: 3}
   m_Name: Falco Gillissen Settings
   m_EditorClassIdentifier: 
-  avatarName: Falco
+  avatarName: avatar Falco
   characterPrefab: {fileID: 2511305392246429370, guid: b55491d8e2544c047b3a888707d8f5c8,
     type: 3}
   canMove: 1

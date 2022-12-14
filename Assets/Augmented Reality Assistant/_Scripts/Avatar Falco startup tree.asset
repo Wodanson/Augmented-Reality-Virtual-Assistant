@@ -115,7 +115,7 @@ MonoBehaviour:
   state: 0
   started: 1
   guid: b8e8db77da528594c98e08773028bf53
-  position: {x: 317.4, y: 592}
+  position: {x: 315.80002, y: 598}
   description: 
   avatarSettings: {fileID: 11400000, guid: 13df902fffe10f344b458d3ee43d0708, type: 2}
 --- !u!114 &3585760931540817084
