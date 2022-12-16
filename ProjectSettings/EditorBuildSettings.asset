@@ -20,12 +20,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Augmented Reality Assistant/Scenes/FoLA2 Scene.unity
     guid: 75d4592a675410b49b91ea75fb2249fe
-  - enabled: 0
+  - enabled: 1
     path: Assets/Augmented Reality Assistant/Scenes/Justins Scene.unity
     guid: a22118c942bfbea46ae844981ce66549
-  - enabled: 1
+  - enabled: 0
     path: Assets/ARCHATBOT.unity
     guid: 3608c9454ebddc441ae74b9051f8fead
+  - enabled: 0
+    path: Assets/Augmented Reality Assistant/Scenes/chatbot AR save.unity
+    guid: ae0e828e9ab961649a133a7018a7f6db
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}
