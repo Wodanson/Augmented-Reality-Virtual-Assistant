@@ -58,7 +58,7 @@ MonoBehaviour:
   guid: 071af03c51f278346beae7e120ead811
   position: {x: 418.66663, y: 746.6666}
   description: 
-  avatarName: Falco
+  avatarName: avatar Falco
   offset: {x: 0, y: 0, z: 0}
 --- !u!114 &-4605843932321766411
 MonoBehaviour:
@@ -75,7 +75,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 3114c8403a4dccd409dff85074559917
-  position: {x: 158.00002, y: 600.0001}
+  position: {x: 159, y: 600}
   description: 
   avatarSettings: {fileID: 11400000, guid: 13df902fffe10f344b458d3ee43d0708, type: 2}
 --- !u!114 &-3551739494126987256
@@ -113,9 +113,9 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: faa524f7bf506b1449a1e27f7f9ad99c
-  position: {x: 666.75006, y: 746.66675}
+  position: {x: 672, y: 747}
   description: 
-  avatarName: Falco
+  avatarName: avatar Falco
   audioClip: {fileID: 8300000, guid: d7cdcadb57e444145a10618d977ced8f, type: 3}
   waitToFinish: 1
 --- !u!114 &-506981129135484400

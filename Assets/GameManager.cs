@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
             Destroy(MessageList[0].textObject.gameObject);
             MessageList.Remove(MessageList[0]);
         }
-
+        
         Message newMessage = new Message();
 
         newMessage.text = text;
