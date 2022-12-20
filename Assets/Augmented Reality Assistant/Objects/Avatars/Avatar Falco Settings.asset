@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c9f239a32b6ad4a4696c7cc60d30ae7f, type: 3}
-  m_Name: Falco Gillissen Settings
+  m_Name: Avatar Falco Settings
   m_EditorClassIdentifier: 
-  avatarName: avatar Falco
-  characterPrefab: {fileID: 2511305392246429370, guid: b55491d8e2544c047b3a888707d8f5c8,
+  avatarName: Falco
+  characterPrefab: {fileID: 7030389691909191337, guid: 7f1aded5ee308c44aaef5099edcf90c9,
     type: 3}
   canMove: 1
   lookAtCamera: 1

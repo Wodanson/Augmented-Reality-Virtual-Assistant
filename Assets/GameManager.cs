@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.InputSystem;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,9 +10,13 @@ public class GameManager : MonoBehaviour
     public int maxMessages = 25;
 
     public GameObject chatPanel, textObject;
+    public InputField chatBox;
+    public TouchScreenKeyboard Keyboard;
 
     [SerializeField]
     List<Message> MessageList = new List<Message>();
+
+
 
     void Start()
     {
@@ -18,11 +24,24 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if ( Keyboard.status == TouchScreenKeyboard.Status.Done)
         {
-            SendMessageToChat("you pressed the space Key");
-            Debug.Log("Space");
+            SendMessageToChat("test");
+            if (chatBox.text != "")
+            {
+                SendMessageToChat(chatBox.text);
+                chatBox.text = "";
+            }
         }
+        if (chatBox.isFocused)
+        {
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                SendMessageToChat("you pressed the space Key");
+                Debug.Log("Space");
+            }
+        }
+
     }
      
     public void SendMessageToChat(string text)
