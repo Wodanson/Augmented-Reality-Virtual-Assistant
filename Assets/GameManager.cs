@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public GameObject chatPanel, textObject;
     public InputField chatBox;
     public TouchScreenKeyboard Keyboard;
+    public string text = "";
 
     [SerializeField]
     List<Message> MessageList = new List<Message>();
@@ -20,7 +21,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-
+        
     }
     void Update()
     {
