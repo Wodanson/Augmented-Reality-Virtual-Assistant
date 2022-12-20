@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     private const string rasa_url = "http://localhost:5005/webhooks/rest/webhook";
     public GameObject chatPanel, textObject;
     public InputField chatBox;
+    public string rasa_answer;
 
     [SerializeField]
     List<Message> MessageList = new List<Message>();
@@ -29,7 +30,8 @@ public class GameManager : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.Return))
             {
                 SendMessageToChat(chatBox.text);
-//                SendMessageToRasa(chatBox.text);
+                SendMessageToRasa(chatBox.text);
+                SendMessageToChat(rasa_answer);
                 chatBox.text = "";
             }
         }
@@ -72,10 +74,20 @@ public class GameManager : MonoBehaviour
     public void SendMessageToRasa(string text)
     {
         // Create a json object from user message
+        Message newMessage = new Message();
+
+        newMessage.text = text;
+
+        GameObject newText = Instantiate(textObject, chatPanel.transform);
+
+        newMessage.textObject = newText.GetComponent<Text>();
+
+        newMessage.textObject.text = newMessage.text;
+
         PostMessageJson postMessage = new PostMessageJson
         {
             sender = "user",
-            message = text
+            message = newMessage.text
         };
 
         string jsonBody = JsonUtility.ToJson(postMessage);
@@ -94,7 +106,7 @@ public class GameManager : MonoBehaviour
         request.SetRequestHeader("Content-Type", "application/json");
 
         yield return request.SendWebRequest();
-
+        rasa_answer = request.downloadHandler.text;
         Debug.Log("Response: " + request.downloadHandler.text);
     }
 }
