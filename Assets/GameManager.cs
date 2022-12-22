@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public int maxMessages = 25;
-    private const string rasa_url = "http://localhost:5005/webhooks/rest/webhook";
+    private const string rasa_url = "https://b8c1-193-173-217-99.ngrok.io/webhooks/rest/webhook";
     public GameObject chatPanel, textObject;
     public InputField chatBox;
     public string rasa_answer;
@@ -31,7 +31,6 @@ public class GameManager : MonoBehaviour
             {
                 SendMessageToChat(chatBox.text);
                 SendMessageToRasa(chatBox.text);
-                SendMessageToChat(rasa_answer);
                 chatBox.text = "";
             }
         }
@@ -107,7 +106,11 @@ public class GameManager : MonoBehaviour
 
         yield return request.SendWebRequest();
         rasa_answer = request.downloadHandler.text;
+        rasa_answer = rasa_answer.Substring(32);
+        rasa_answer = rasa_answer.TrimEnd('}',']', '"');
         Debug.Log("Response: " + request.downloadHandler.text);
+        SendMessageToChat(rasa_answer);
+
     }
 }
 

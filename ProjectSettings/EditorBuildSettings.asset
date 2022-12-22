@@ -29,10 +29,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Augmented Reality Assistant/Scenes/chatbot AR save.unity
     guid: ae0e828e9ab961649a133a7018a7f6db
-  - enabled: 1
+  - enabled: 0
     path: Assets/AR chatbot test scene.unity
     guid: fa6f964bc2825e644825e637a1490de3
-  - enabled: 1
+  - enabled: 0
     path: Assets/ar catbot test scene.unity
     guid: 2c4f150d2c38828468131b62bd690b0d
   m_configObjects:
